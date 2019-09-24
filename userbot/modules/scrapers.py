@@ -29,8 +29,6 @@ from googleapiclient.errors import HttpError
 from googletrans import LANGUAGES, Translator
 from gtts import gTTS
 from emoji import get_emoji_regexp
-from pytube import YouTube
-from pytube.helpers import safe_filename
 
 from userbot import CMD_HELP, BOTLOG, BOTLOG_CHATID, YOUTUBE_API_KEY, CHROME_DRIVER, GOOGLE_CHROME_BIN
 from userbot.events import register
