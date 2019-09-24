@@ -70,7 +70,7 @@ async def mention_afk(mention):
                 if USERS[mention.sender_id] % 2 == 0:
                     if AFKREASON:
                         await mention.reply(
-                            f"Thoda jayda busy hai wo. Currently busy with `{AFKREASON}`."
+                            f"He ain't vella like you.Currently busy with `{AFKREASON}`."
                         )
                     else:
                         await mention.reply(
