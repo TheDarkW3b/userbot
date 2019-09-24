@@ -26,7 +26,7 @@ async def gen_chlog(repo, diff):
 
 
 async def is_off_br(br):
-    off_br = ['sql-extended', 'sql-dirty']
+    off_br = ['master']
     for k in off_br:
         if k == br:
             return 1
@@ -93,7 +93,7 @@ async def upstream(ups):
         else:
             await ups.edit(changelog_str)
         await ups.respond(
-            "`do \".update now\" to update\nDon't if using Heroku`")
+            "`do \".update now\" to update\nDon't do if using Heroku`")
         return
 
     await ups.edit('`New update found, updating...`')
