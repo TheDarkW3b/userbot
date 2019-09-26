@@ -53,7 +53,7 @@ async def endecrypt(query):
         lething = str(
             pybase64.b64encode(bytes(query.pattern_match.group(2),
                                      "utf-8")))[2:]
-        await query.reply("Encoded: `" + lething[:-1] + "`")
+        await query.reply("Shhh! It's Encoded: `" + lething[:-1] + "`")
     else:
         lething = str(
             pybase64.b64decode(bytes(query.pattern_match.group(2), "utf-8"),
