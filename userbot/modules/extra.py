@@ -96,11 +96,11 @@ async def _(event):
 		await event.edit("".join(deq))
 		deq.rotate(1)
 		
-@register(outgoing=True, pattern="^.mf$")
+@register(outgoing=True, pattern="^.fap$")
 async def _(event):
 	if event.fwd_from:
 		return
-	deq = deque(list("👉🏻👉🏻🖕👈🏻👈🏻"))
+	deq = deque(list("🍆✊🏻💦"))
 	for _ in range(32):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
@@ -155,6 +155,6 @@ CMD_HELP.update({
     "heart": "Try and you'll get your emotions back"
 })
 CMD_HELP.update({
-    "mf": "Sends the most wanted Finger"
+    "": "Faking orgasm"
 })
 
