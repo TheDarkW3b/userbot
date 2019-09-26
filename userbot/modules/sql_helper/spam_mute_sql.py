@@ -1,9 +1,9 @@
 try:
     from userbot.modules.sql_helper import SESSION, BASE
 except ImportError:
-    raise Exception("Hello!")
+    raise AttributeError
 
-from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
+from sqlalchemy import Column, String
 
 
 class Mute(BASE):
@@ -22,7 +22,7 @@ Mute.__table__.create(checkfirst=True)
 def is_muted(chat_id):
     try:
         return SESSION.query(Mute).filter(Mute.chat_id == str(chat_id)).all()
-    except:
+    except BaseException:
         return None
     finally:
         SESSION.close()
