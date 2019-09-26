@@ -85,6 +85,16 @@ async def _(event):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
 		deq.rotate(1)
+		
+@register(outgoing=True, pattern="^.heart$")
+async def _(event):
+	if event.fwd_from:
+		return
+	deq = deque(list("❤️🧡💛💚💙💜🖤💖💝"))
+	for _ in range(32):
+		await asyncio.sleep(0.1)
+		await event.edit("".join(deq))
+		deq.rotate(1)
 
 @register(outgoing=True, pattern="^.myusernames$")
 async def _(event):
@@ -120,7 +130,7 @@ CMD_HELP.update({
     "readme": "Reedme."
 })
 CMD_HELP.update({
-    "sauce": "source."
+    "source": "Gives the source of your userbot"
 })
 CMD_HELP.update({
     "myusernames": "List of Usernames owned by you."
@@ -128,3 +138,10 @@ CMD_HELP.update({
 CMD_HELP.update({
     "oof": "Same as ;__; but ooof"
 })
+CMD_HELP.update({
+    "earth": "Sends Kensar Earth animation"
+})
+CMD_HELP.update({
+    "heart": "Try and you'll get your emotions back"
+})
+
