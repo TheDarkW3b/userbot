@@ -36,7 +36,7 @@ METOOSTR = [
     "`Same pinch bsdk`",
 ]
 NOOBSTR = [
-    "`YOU PRO NIMBA DONT MESS WIDH MEH`",
+    "`YOU PRO NIMBA DONT MESS WIDH MEH`", 
     "`Haha yes`",
     "`NOOB NIMBA TRYING TO BE FAMOUS KEK`",
     "`Sometimes one middle finger isn’t enough to let someone know how you feel. That’s why you have two hands`",
@@ -347,7 +347,7 @@ FACEREACTS = [
 ]
 
 RUNSREACTS = [
-    "`Runs to Thanos`",
+    "`Runs to DarkWeb`",
     "`Runs far, far away from earth`",
     "`Running faster than supercomputer, cuzwhynot`",
     "`Runs to SunnyLeone`",
