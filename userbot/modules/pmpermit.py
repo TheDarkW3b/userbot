@@ -18,10 +18,12 @@ from userbot import (COUNT_PM, CMD_HELP, BOTLOG, BOTLOG_CHATID,
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
-UNAPPROVED_MSG = ("`Welcome, You are a wonderful person with a wonderful view of life.`\n\n"
+UNAPPROVED_MSG = ("`Welcome, You are a shit person with a shit view of life.`\n\n"
                   "`Your companionship is always an opportunity But Sed This line is not for you.`"
                   "`So just tell why you are here ?`\n\n"
-                  "`Your message has been received will be responded when I'm free don't sit here whole day coz there is lots of pending message😶‚`")
+                  "`Sorry I Am Like That Only`\n\n"
+                  "`Your message has been received will be responded when I'm free don't sit here whole day coz there is lots of pending message😶‚`"
+                  "`Regards` @TheDarkW3b")
 # =================================================================
 
 
@@ -70,7 +72,7 @@ async def permitpm(event):
                 if COUNT_PM[event.chat_id] > 4:
                     await event.respond(
                         "`You were spamming my peru master's Inox.`\n"
-                        "`You chuu nubfuk been BLOCKED and reported as SPAM, now GTFO.`"
+                        "`You DevManush been BLOCKED and reported as SPAM, now GTFO.`"
                     )
 
                     try:
@@ -183,7 +185,7 @@ async def approvepm(apprvpm):
         try:
             approve(uid)
         except IntegrityError:
-            await apprvpm.edit("`This nub may already be approved.`")
+            await apprvpm.edit("`This lodu may already be approved.`")
             return
 
         await apprvpm.edit(
