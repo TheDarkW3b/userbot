@@ -1,10 +1,10 @@
 # PaperPlane Extended UserBot
 
-### Installing.py xD
+### Installing
 
 #### The easiest way to deploy this lit bad boy !!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Spyderzz/Userbot/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheDarkW3b/Userbot/tree/master)
 
 ### If the CI builds pass, but you still get syntax errors when running locally it's most probably not a problem with the source but with your version of python
 
