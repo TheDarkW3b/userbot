@@ -50,8 +50,8 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY", 1162693)
-API_HASH = os.environ.get("API_HASH", ebdb74f078e513cc298ae9bedb2ae9f3)
+API_KEY = os.environ.get("API_KEY", "1162693")
+API_HASH = os.environ.get("API_HASH", "ebdb74f078e513cc298ae9bedb2ae9f3")
 
 # Userbot Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
