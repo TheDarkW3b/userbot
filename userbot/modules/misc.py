@@ -70,23 +70,23 @@ async def revivedabot(restart):
 async def bot_community(community):
     """ For .support command, just returns the group link. """
     if not community.text[0].isalpha() and community.text[0] not in ("/", "#", "@", "!"):
-        await community.edit("Join the awesome Paperplane userbot community: @userbot_support\nBe warned that this is a fork of their project and you may get limited support for bugs.")
+        await community.edit("Join the awesome community: @CuratorCrew\nBe warned that this is a fork of their project and you may get limited support for bugs.")
 
 @register(outgoing=True, pattern="^.support$")
 async def bot_support(wannahelp):
     """ For .support command, just returns the group link. """
     if not wannahelp.text[0].isalpha() and wannahelp.text[0] not in ("/", "#", "@", "!"):
-        await wannahelp.edit("Join the Paperplane Extended Channel: @PaperplaneExtended")
+        await wannahelp.edit("Join the Best Group For Any Help: @CuratorCrew")
 
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("[Spyder #DerpGang](https://t.me/Spyderzzz/)")
+        await e.edit("[DarkWeb](https://t.me/TheDarkW3b/)")
 
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("You might want to have a look at the [README.md](https://github.com/spyderzz/Userbot/blob/master/README.md) file.")
+        await e.edit("You might want to have a look at the [README.md](https://github.com/TheDarkW3b/userbot/blob/master/README.md) file.")
 
 #
 # Copyright (c) Gegham Zakaryan | 2019
@@ -108,7 +108,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     if not wannasee.text[0].isalpha() and wannasee.text[0] not in ("/", "#", "@", "!"):
-        await wannasee.edit("Click [here](https://github.com/spyderzz/Userbot) to open this lit af repo.")
+        await wannasee.edit("Click [here](https://github.com/TheDarkW3b/userbot) to open this lit af repo.")
 
 CMD_HELP.update({
     'random': '.random <item1> <item2> ... <itemN>\
